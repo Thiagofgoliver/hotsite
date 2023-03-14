@@ -1,0 +1,374 @@
+
+
+/* bory é a regra geral da pagina */
+body{
+    background-color: aqua;
+    /* imagem para fundo */
+    background-image: url('../imagens/ondas-abstratas.png ');
+
+    /* para repitir nao repitir o fundo  */
+    background-repeat: no-repeat;
+
+    /* definir o tamanho do fundo */
+
+    background-size: 100%;
+    
+    /* regular posição do fundo  */
+    background-position: 0 20px ;
+
+
+    /* para manter o fundo fixo  */
+
+    background-attachment: fixed;
+
+    font-family: 'Open Sans', sans-serif
+
+    
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    /* colocar uma fonte boa nas letras */
+    font-family: 'Averia Gruesa Libre', cursive;
+
+ 
+
+/* formatação do cabeçalho */
+
+}
+header{
+    border-bottom: 1px solid #444;
+    height: 80px ;
+}
+/* logotipo */
+
+header h1{
+    padding: 4px;
+    background-color: darkgreen;
+    color: #fff;
+    width: fit-content;
+
+    float: left;    /* pedir para o elemento float left serve para flotuar a esquerda  */
+}
+
+/* menu */
+nav{
+    width: 50%;
+    /* background-color: black; */
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+
+nav li{
+   display: inline-block;
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    margin: 0 8px 0 0;
+   background-color: darkgreen;
+   color: #fff;
+   text-decoration:none;
+}
+
+nav li a:hover{
+    background-color: #fff;
+    color: darkgreen;
+}
+
+main{
+    clear: both;   
+}
+
+
+
+/* colocar conteudo complementar */
+aside,section{
+    border: 1px solid #555;
+    padding: 10px;
+
+}
+aside{
+   width: 30%;
+   float: left;
+
+}
+
+section{
+    width: 66%;
+    float: right;
+}
+
+
+aside img {
+    width: 100%;
+}
+
+aside figure{
+    margin: 0;
+}
+
+aside,section{
+    border: 1px solid #555;
+    padding: 10px;
+
+    /* para a cor com uma transparencia! */
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+footer{
+    clear:both;
+
+
+    border-top: 1px #555;
+
+
+
+
+}
+footer p{
+    text-align: center;
+}
+
+
+
+
+.fala  {
+    font-style: italic;
+   font-weight: 700;
+}
+
+
+
+/* janela modal ou popup é qualquer fica por cima de algum conteudo  */
+.popup{
+    position: fixed;
+    
+/* posicionamento com top e para direita o "right" ou para esquerda o "left"  */
+
+    bottom:20px ;
+    right: -400px ;
+
+
+    width: 250px;
+    padding: 10px;
+    background-color: burlywood;
+    border:4px #fff solid;
+    box-shadow: 3px 3px 3px #444;
+
+
+
+}
+
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+
+
+}
+
+
+
+ @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-450px);
+              transform: translateX(-450px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-450px);
+              transform: translateX(-450px);
+    }
+
+
+  }
+  
+
+
+
+/* botao fechar */
+.fechar{
+    position: absolute;
+    right: -31px;
+    top: 0;
+    background-color: #900;
+    color: #fff;
+    padding: 8px;
+    width: 20px;
+    height: 16px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* layout em celulares e tablets,telas menores que 1200px */
+
+@media screen  and (max-width:1199px){
+
+
+    header{
+        height:120px;
+
+    }
+    
+    header h1,header nav,aside,section{
+        float: none;
+        width: 97%;
+
+    }
+}
+
+/* só para celular  */
+    @media screen  and (max-width:1199px){
+
+
+        header{
+            height:120px;    
+        }
+}
+
+/* layout para impressão  */
+
+@media print {
+    /* define uma tamanho para 12pt*/
+    body {
+      font-size: 10pt;
+     
+
+    }
+
+    h1 {
+        font-size: 16pt;
+      
+    }
+    h2{
+        font-size: 14pt;
+        
+    }
+
+    @page {
+      margin: 12mm;
+      size: A4;
+
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
